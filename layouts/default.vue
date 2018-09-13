@@ -3,11 +3,7 @@
     <blog-header/>
     <section class="section">
       <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-two-thirds">
-            <nuxt/>
-          </div>
-        </div>
+        <nuxt/>
       </div>
     </section>
     <blog-footer/>

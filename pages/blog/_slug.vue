@@ -1,6 +1,8 @@
 <template>
   <section>
-    <h1>{{post.title}}</h1>
+    <nuxt-link :to="`/blog/${post.slug}`">
+        <h1 class="title is-1 has-text-centered">{{post.title}}</h1>
+    </nuxt-link>
     <div class="content" v-html="$md.render(post.body)"></div>
   </section>
 </template>
@@ -9,6 +11,14 @@
 import gql from 'graphql-tag'
 
 export default {
+  data() {
+    return {
+      post: {
+        title: '',
+        body: ''
+      }
+    }
+  },
   apollo: {
     post: {
       query: gql`query Post($slug: String!) {
@@ -21,9 +31,9 @@ export default {
           body
         }
       }`,
-      prefetch({route}) {
+      prefetch({params}) {
         return {
-          slug: route.params.slug
+          slug: params.slug
         }
       },
       variables() {
