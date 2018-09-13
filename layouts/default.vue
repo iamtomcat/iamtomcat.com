@@ -1,8 +1,30 @@
 <template>
   <div>
-    <nuxt/>
+    <blog-header/>
+    <section class="section">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-two-thirds">
+            <nuxt/>
+          </div>
+        </div>
+      </div>
+    </section>
+    <blog-footer/>
   </div>
 </template>
+
+<script>
+import BlogFooter from '~/layouts/BlogFooter.vue'
+import BlogHeader from '~/layouts/BlogHeader.vue'
+
+export default {
+  components: {
+    BlogHeader,
+    BlogFooter
+  }
+}
+</script>
 
 <style>
 html {

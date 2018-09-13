@@ -1,57 +1,29 @@
 <template>
-  <div>
-    <section class="hero is-primary">
-      <!-- Hero head: will stick at the top -->
-      <div class="hero-head">
-        <nav class="navbar">
-          <div class="container">
-            <div class="navbar-brand">
-              <a class="navbar-item">
-                <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
-              </a>
-              <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
-            </div>
-            <div id="navbarMenuHeroA" class="navbar-menu">
-              <div class="navbar-end">
-                <a class="navbar-item is-active">
-                  Home
-                </a>
-                <a class="navbar-item">
-                  Examples
-                </a>
-                <a class="navbar-item">
-                  Documentation
-                </a>
-                <span class="navbar-item">
-                  <a class="button is-primary is-inverted">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Download</span>
-                  </a>
-                </span>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </section>
-    <posts/>
-  </div>
+  <ul>
+    <li v-for="(post, index) in allPosts" :key="index">
+      <h1 class="title is-2">
+        <nuxt-link :to="`/blog/${post.slug}`">
+          {{post.title}}
+        </nuxt-link>
+      </h1>
+      <div class="content" v-html="$md.render(post.summary)"></div>
+      <hr/>
+    </li>
+  </ul>
 </template>
 
 <script>
-import Posts from '~/pages/blog/_posts.vue'
-import AppLogo from '~/components/AppLogo.vue'
+import gql from 'graphql-tag'
 
 export default {
-  components: {
-    AppLogo,
-    Posts
+  apollo: {
+    allPosts: gql`{
+      allPosts{
+        title
+        summary
+        slug
+      }
+    }`
   }
 }
 </script>

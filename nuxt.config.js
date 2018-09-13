@@ -5,14 +5,11 @@ module.exports = {
   ],
   apollo: {
     clientConfigs: {
-      default: {
-        httpEndpoint: 'https://api-uswest.graphcms.com/v1/cjlbag2jo0e9001fzdwpm19mq/master',
-        getAuth: () => 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ2ZXJzaW9uIjoxLCJ0b2tlbklkIjoiMTY5NzhkNDItNzlkYy00NzEzLTlhZDUtMDJkODBhNDdlYzYzIn0.vLWV_DVyiHU9oP50OLw1bk4ydFThLq2tiFHZJtxnT3A'
-      },
+      default: '~/plugins/apollo-config.js',
     }
   },
   css: [
-    '~/assets/main.scss'
+    '@/assets/main.scss'
   ],
   /*
   ** Headers of the page
@@ -39,6 +36,11 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    postcss: {
+      plugins: {
+        'postcss-custom-properties': false
+      }
+    },
     /*
     ** Run ESLint on save
     */
@@ -54,4 +56,3 @@ module.exports = {
     }
   }
 }
-
