@@ -6,7 +6,7 @@
           {{post.title}}
         </nuxt-link>
       </h1>
-      <div class="content" v-html="$md.render(post.summary)"></div>
+      <div class="content is-size-5" v-html="$md.render(post.summary)"></div>
       <hr/>
     </li>
   </ul>

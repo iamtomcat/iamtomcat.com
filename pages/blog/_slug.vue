@@ -1,9 +1,11 @@
 <template>
   <section>
-    <nuxt-link :to="`/blog/${post.slug}`">
-        <h1 class="title is-1 has-text-centered">{{post.title}}</h1>
-    </nuxt-link>
-    <div class="content" v-html="$md.render(post.body)"></div>
+    <h2 class="title is-2 has-text-centered">
+      <nuxt-link :to="`/blog/${post.slug}`">
+        {{post.title}}
+      </nuxt-link>
+    </h2>
+    <div class="content is-size-5" v-html="$md.render(post.body)"></div>
   </section>
 </template>
 

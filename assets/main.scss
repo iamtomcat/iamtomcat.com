@@ -1,6 +1,12 @@
 @import '~bulma/sass/utilities/initial-variables';
 @import '~bulma/sass/utilities/functions';
 
-$gap: 192;
+$fullhd-enabled: false;
+$widescreen-enabled: false;
+$link: $green;
+
+.nuxt-link-exact-active {
+  @extend .is-active;
+}
 
 @import '~bulma';
