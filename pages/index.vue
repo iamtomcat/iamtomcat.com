@@ -3,11 +3,11 @@
     <tag-line/>
     <ul>
       <li v-for="(post, index) in allPosts" :key="index">
-        <h2 class="title is-1">
+        <h1 class="title is-1">
           <nuxt-link :to="`/blog/${post.slug}`">
             {{post.title}}
           </nuxt-link>
-        </h2>
+        </h1>
         <div class="content is-size-4" v-html="$md.render(post.summary)"></div>
         <hr/>
       </li>

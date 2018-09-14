@@ -4,11 +4,16 @@
 
 <script>
 export default {
-  asyncData ({ app }) {
-    return app.$axios.get(`http://localhost:3000/now.md`)
+  data() {
+    return {
+      nowPage: ""
+    }
+  },
+  mounted: function() {
+    this.$axios.get(`/now.md`)
     .then((res) => {
-      return { nowPage: res.data }
+      this.nowPage = res.data
     })
-  }
+  },
 }
 </script>
