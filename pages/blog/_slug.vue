@@ -1,11 +1,17 @@
 <template>
-  <section>
-    <h2 class="title is-2 has-text-centered">
-      <nuxt-link :to="`/blog/${post.slug}`">
-        {{post.title}}
-      </nuxt-link>
-    </h2>
-    <div class="content is-size-5" v-html="$md.render(post.body)"></div>
+  <section class="section">
+    <div v-if="$apollo.loading" class="title is-1 has-text-centered">Loading...</div>
+    <div v-else>
+        <h1 class="title is-1 has-text-centered">
+        <nuxt-link :to="`/blog/${post.slug}`">
+          {{post.title}}
+        </nuxt-link>
+      </h1>
+      <h2 class="subtitle is-2 has-text-centered">
+        Written By Tom - {{post.date}}
+      </h2>
+      <div class="content is-size-4" v-html="$md.render(post.body)"></div>
+    </div>
   </section>
 </template>
 
@@ -17,7 +23,9 @@ export default {
     return {
       post: {
         title: '',
-        body: ''
+        body: '',
+        date: '',
+        author: ''
       }
     }
   },
@@ -31,6 +39,7 @@ export default {
         }) {
           title
           body
+          date
         }
       }`,
       prefetch({params}) {

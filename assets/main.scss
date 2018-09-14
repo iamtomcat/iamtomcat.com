@@ -4,9 +4,21 @@
 $fullhd-enabled: false;
 $widescreen-enabled: false;
 $link: $green;
+$size-1: 2.5rem;
+$size-2: 2rem;
+$size-3: 1.5rem;
+$size-4: 1.25rem;
+$size-5: 1rem;
 
 .nuxt-link-exact-active {
   @extend .is-active;
+}
+
+.logo {
+  color: #363636;
+  font-weight: 600;
+  line-height: 1.125;
+  font-size: 3rem;
 }
 
 @import '~bulma';

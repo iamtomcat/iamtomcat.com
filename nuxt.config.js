@@ -1,12 +1,16 @@
 module.exports = {
   modules: [
     '@nuxtjs/apollo',
-    '@nuxtjs/markdownit'
+    '@nuxtjs/markdownit',
+    '@nuxtjs/axios'
   ],
   apollo: {
     clientConfigs: {
       default: '~/plugins/apollo-config.js',
     }
+  },
+  axios: {
+
   },
   css: [
     '@/assets/main.scss'

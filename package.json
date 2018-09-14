@@ -1,7 +1,7 @@
 {
   "name": "blog",
-  "version": "0.0.1",
-  "description": "Personal Blog",
+  "version": "0.0.2",
+  "description": "A development blog by Tom Clark.",
   "author": "Tom Clark <tom@fluid-dynamics.ca>",
   "private": true,
   "scripts": {
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@nuxtjs/apollo": "^4.0.0-rc1",
+    "@nuxtjs/axios": "^5.3.1",
     "@nuxtjs/markdownit": "^1.2.1",
     "bulma": "^0.7.1",
     "graphql-tag": "^2.9.2",
