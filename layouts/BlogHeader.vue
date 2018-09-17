@@ -4,18 +4,17 @@
         <!-- Hero head: will stick at the top -->
         <div class="hero-head">
           <nav class="navbar">
-            <!-- <div class="container"> -->
               <div class="navbar-brand">
                 <a href="/">
-                  <h1 class="logo">iAmTomcat</h1>
+                  <h1 class="logo has-text-centered">iAmTomcat</h1>
                 </a>
-                <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                <span class="navbar-burger burger" data-target="navbarMenuHeroA" v-on:click="showNav = !showNav" v-bind:class="{ 'is-active': showNav }">
                   <span></span>
                   <span></span>
                   <span></span>
                 </span>
               </div>
-              <div id="navbarMenuHeroA" class="navbar-menu">
+              <div id="navbarMenuHeroA" class="navbar-menu" v-bind:class="{ 'is-active': showNav }">
                 <div class="navbar-end">
                   <nuxt-link class="navbar-item" :to="`/`">
                     Home
@@ -29,9 +28,19 @@
                   </a>
                 </div>
               </div>
-            <!-- </div> -->
           </nav>
         </div>
       </section>
     </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      showNav: false
+    }
+  }
+}
+</script>
+
