@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <div v-if="$apollo.loading" class="title is-1 has-text-centered">Loading...</div>
+    <h1 v-if="$apollo.loading" class="title is-1 has-text-centered">Loading...</h1>
     <div v-else>
         <h1 class="title is-1 has-text-centered">
         <nuxt-link :to="`/blog/${post.slug}`">
