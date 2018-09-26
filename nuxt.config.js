@@ -1,12 +1,19 @@
+const pkg = require('./package')
+
 module.exports = {
   modules: [
     '@nuxtjs/apollo',
-    '@nuxtjs/markdownit'
+    '@digibytes/markdownit',
+    'nuxt-matomo'
   ],
   apollo: {
     clientConfigs: {
       default: '~/plugins/apollo-config.js',
     }
+  },
+  'nuxt-matomo': {
+    matomoUrl: 'https://iamtomcat.innocraft.cloud/',
+    siteId: 1
   },
   css: [
     '@/assets/main.scss'
@@ -44,8 +51,8 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
+    extend (config, ctx) {
+      if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
