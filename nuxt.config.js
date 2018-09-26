@@ -1,19 +1,16 @@
-const pkg = require('./package')
-
 module.exports = {
   modules: [
     '@nuxtjs/apollo',
     '@digibytes/markdownit',
-    'nuxt-matomo'
+    ['nuxt-matomo', {
+      matomoUrl: 'https://iamtomcat.innocraft.cloud/',
+      siteIds: 1
+    }]
   ],
   apollo: {
     clientConfigs: {
       default: '~/plugins/apollo-config.js',
     }
-  },
-  'nuxt-matomo': {
-    matomoUrl: 'https://iamtomcat.innocraft.cloud/',
-    siteId: 1
   },
   css: [
     '@/assets/main.scss'

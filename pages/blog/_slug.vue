@@ -29,6 +29,12 @@ export default {
       }
     }
   },
+  matomo (from, to, store) {
+    alert('cheese')
+    return {
+      someVar: ['setCustomVariable', 1, 'VisitorType', 'Special Member']
+    }
+  },
   apollo: {
     post: {
       query: gql`query Post($slug: String!) {
