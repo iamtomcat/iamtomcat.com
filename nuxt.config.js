@@ -1,5 +1,4 @@
 module.exports = {
-  mode: 'spa',
   modules: [
     '@nuxtjs/apollo',
     '@digibytes/markdownit',
