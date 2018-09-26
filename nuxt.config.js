@@ -1,7 +1,8 @@
 module.exports = {
   modules: [
     '@nuxtjs/apollo',
-    '@digibytes/markdownit'
+    '@digibytes/markdownit',
+    ['nuxt-matomo', { matomoUrl: '//iamtomcat.innocraft.cloud/', siteId: 1 }]
   ],
   apollo: {
     clientConfigs: {
