@@ -12,9 +12,6 @@ module.exports = {
   css: [
     '@/assets/main.scss'
   ],
-  /*
-  ** Headers of the page
-  */
   head: {
     title: 'Blog',
     meta: [
@@ -29,9 +26,10 @@ module.exports = {
   markdownit: {
     injected: true
   },
-  /*
-  ** Customize the progress bar color
-  */
+  'nuxt-matomo': {
+    matomoUrl: 'https://iamtomcat.innocraft.cloud/',
+    siteId: 1
+  },
   loading: { color: 'hsl(141, 71%, 48%)' },
   /*
   ** Build configuration
