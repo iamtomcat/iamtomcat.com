@@ -21,3 +21,7 @@ $ npm run generate
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
 
+```js
+const debug = require('debug')('app:demo')
+debug('meow !')
+```
