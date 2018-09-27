@@ -13,24 +13,21 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@digibytes/markdownit": "^1.2.2",
-    "@nuxtjs/apollo": "^4.0.0-rc2",
+    "@nuxtjs/apollo": "^4.0.0-rc1",
+    "@nuxtjs/axios": "^5.3.1",
+    "@nuxtjs/markdownit": "^1.2.1",
     "bulma": "^0.7.1",
     "graphql-tag": "^2.9.2",
-    "nuxt": "^2.0.0",
+    "nuxt": "^1.0.0",
     "nuxt-matomo": "^0.5.0",
     "vue-apollo": "^3.0.0-beta.19"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0",
-    "babel-eslint": "^10.0.0",
-    "eslint": "^5.0.1",
-    "eslint-friendly-formatter": "^4.0.1",
-    "eslint-loader": "^2.0.0",
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
     "eslint-plugin-vue": "^4.0.0",
-    "eslint-config-prettier": "^3.1.0",
-    "eslint-plugin-prettier": "2.6.2",
-    "prettier": "1.14.3",
     "node-sass": "^4.9.3",
     "sass-loader": "^7.1.0"
   }
