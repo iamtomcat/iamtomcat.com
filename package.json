@@ -1,6 +1,6 @@
 {
   "name": "blog",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A development blog by Tom Clark.",
   "author": "Tom Clark <tom@fluid-dynamics.ca>",
   "private": true,
@@ -13,22 +13,22 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@nuxtjs/apollo": "^4.0.0-rc1",
-    "@nuxtjs/axios": "^5.3.1",
-    "@nuxtjs/markdownit": "^1.2.1",
-    "bulma": "^0.7.1",
-    "graphql-tag": "^2.9.2",
-    "nuxt": "^1.0.0",
-    "nuxt-matomo": "^0.5.0",
-    "vue-apollo": "^3.0.0-beta.19"
+    "@nuxtjs/apollo": "^4.0.0-rc4",
+    "@nuxtjs/markdownit": "^1.2.3",
+    "bulma": "^0.7.4",
+    "core-js": "^2.6.5",
+    "graphql-tag": "^2.10.1",
+    "nuxt": "^2.4.5",
+    "nuxt-matomo": "^0.5.1",
+    "vue-apollo": "^3.0.0-beta.28"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.1",
-    "eslint": "^4.15.0",
-    "eslint-friendly-formatter": "^3.0.0",
-    "eslint-loader": "^1.7.1",
-    "eslint-plugin-vue": "^4.0.0",
-    "node-sass": "^4.9.3",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.14.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-vue": "^5.2.2",
+    "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0"
   }
 }
