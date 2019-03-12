@@ -19,12 +19,12 @@
     "core-js": "^2.6.5",
     "graphql-tag": "^2.10.1",
     "nuxt": "^2.4.5",
-    "nuxt-matomo": "^0.5.1",
+    "nuxt-matomo": "^1.2.2",
     "vue-apollo": "^3.0.0-beta.28"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.14.1",
+    "eslint": "^5.15.0",
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-loader": "^2.1.2",
     "eslint-plugin-vue": "^5.2.2",
