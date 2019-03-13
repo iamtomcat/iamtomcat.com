@@ -16,13 +16,12 @@
               </div>
               <div id="navbarMenuHeroA" class="navbar-menu" v-bind:class="{ 'is-active': showNav }">
                 <div class="navbar-end">
-                  <nuxt-link class="navbar-item" :to="`/`">
+                  <a class="navbar-item" href="/">
                     Home
-                  </nuxt-link>
-                  <nuxt-link class="navbar-item" :to="`/now`">
+                  </a>
+                  <a class="navbar-item" href="/now">
                     Now
-                  </nuxt-link>
-                  <!-- <nuxt-link class="navbar-item" to="/about">About</nuxt-link> -->
+                  </a>
                   <a class="navbar-item" href="https://www.github.com/iamtomcat">
                     GitHub
                   </a>

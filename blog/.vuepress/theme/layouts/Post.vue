@@ -2,8 +2,8 @@
   <div>
     <blog-header/>
     <section class="section">
-      <div class="container">
-        <nuxt/>
+      <div class="container content">
+        <Content/>
       </div>
     </section>
     <blog-footer/>
@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import BlogFooter from '~/layouts/BlogFooter.vue'
-import BlogHeader from '~/layouts/BlogHeader.vue'
+import BlogFooter from '../components/BlogFooter.vue'
+import BlogHeader from '../components/BlogHeader.vue'
 
 export default {
   components: {
@@ -21,3 +21,5 @@ export default {
   }
 }
 </script>
+
+<style src="../styles/main.scss" lang="scss"></style>
