@@ -1,7 +1,9 @@
-# 2019-03-13
+# 2019-04-10
 
 ## Projects
 
-Changed this blog over to vuepress, not going to touch it for a while and actually write some content.
+Still working on my image api.
 
-Trying to finish up my image api and connect it up to this site.
+Also been trying to write some actual content.
+
+Need to add dates to posts.

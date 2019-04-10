@@ -20,9 +20,12 @@
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-loader": "^2.1.2",
     "eslint-plugin-vue": "^5.2.2",
+    "markdown-it-prism": "^2.0.1",
     "node-sass": "^4.11.0",
+    "prismjs": "^1.16.0",
     "sass-loader": "^7.1.0",
     "vuepress": "^1.0.0-alpha.44",
+    "vuepress-plugin-feed": "^0.1.5",
     "vuepress-plugin-matomo": "^1.0.2"
   }
 }

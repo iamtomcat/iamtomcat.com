@@ -111,7 +111,7 @@ class CustomPrintPageRenderer: UIPrintPageRenderer {
 
 To start off we just setup the size of the page itself in pixels. We're just using standard A4 sizing. The `paperRect` variable is definining the page size.
 
-The `drawFooterForPage` function is called whenever a page is done rendering and needs a footer. 
+The `drawFooterForPage` function is called whenever a page is done rendering and needs a footer.
 
 The `getSizeForText` function is just figuring out the size of the footer text so that it can be centered.
 

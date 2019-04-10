@@ -1,6 +1,12 @@
 @import '~bulma/sass/utilities/initial-variables';
 @import '~bulma/sass/utilities/functions';
 
+@import "~prismjs/themes/prism-okaidia.css";
+
+pre[class*="language-"] {
+  background: #393a3c;
+}
+
 $fullhd-enabled: false;
 $widescreen-enabled: false;
 $link: $green;
@@ -20,14 +26,24 @@ svg.icon.outbound {
   display: none;
 }
 
-.nuxt-link-exact-active {
-  @extend .is-active;
-}
-
 .logo {
   font-weight: 600;
   line-height: 1.125;
   font-size: 3rem;
+}
+
+.content .tag, .content .number {
+  display: inline;
+  padding: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  vertical-align: inherit;
+  border-radius: inherit;
+  font-weight: inherit;
+  white-space: inherit;
+  background: inherit;
+  margin: inherit;
 }
 
 @import '~bulma';
