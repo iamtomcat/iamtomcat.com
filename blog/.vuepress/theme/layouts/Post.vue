@@ -3,6 +3,8 @@
     <blog-header/>
     <section class="section">
       <div class="container content">
+        <h1><a :href=$page.path>{{ $frontmatter.title }}</a></h1>
+        <h2>{{ $frontmatter.date }}</h2>
         <Content/>
       </div>
     </section>

@@ -11,21 +11,22 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "bulma": "^0.7.4"
+    "bulma": "^0.8.1",
+    "moment": "^2.24.0"
   },
   "devDependencies": {
-    "@vuepress/plugin-blog": "^1.0.0-alpha.44",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.15.0",
+    "@vuepress/plugin-blog": "^1.9.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
     "eslint-friendly-formatter": "^4.0.1",
-    "eslint-loader": "^2.1.2",
-    "eslint-plugin-vue": "^5.2.2",
-    "markdown-it-prism": "^2.0.1",
-    "node-sass": "^4.11.0",
-    "prismjs": "^1.16.0",
-    "sass-loader": "^7.1.0",
-    "vuepress": "^1.0.0-alpha.44",
-    "vuepress-plugin-feed": "^0.1.5",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-vue": "^6.2.2",
+    "markdown-it-prism": "^2.0.5",
+    "node-sass": "^4.13.1",
+    "prismjs": "^1.19.0",
+    "sass-loader": "^8.0.2",
+    "vuepress": "^1.4.0",
+    "vuepress-plugin-feed": "^0.1.8",
     "vuepress-plugin-matomo": "^1.0.2"
   }
 }
