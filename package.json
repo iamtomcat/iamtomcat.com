@@ -22,7 +22,7 @@
     "eslint-loader": "^3.0.3",
     "eslint-plugin-vue": "^6.2.2",
     "markdown-it-prism": "^2.0.5",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "prismjs": "^1.19.0",
     "sass-loader": "^8.0.2",
     "vuepress": "^1.4.0",
